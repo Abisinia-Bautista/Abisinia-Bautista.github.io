@@ -1,40 +1,389 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abisinia Bautista | Portafolio</title>
+  <meta name="description" content="Portafolio profesional: sobre mí, proyectos, habilidades y contacto." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Professional Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Abisinia Bautista, a passionate web developer with experience in creating dynamic and responsive web applications.</p>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li><strong>Project 1:</strong> Description of project 1.</li>
-            <li><strong>Project 2:</strong> Description of project 2.</li>
-            <li><strong>Project 3:</strong> Description of project 3.</li>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-smooth-scroll="true" tabindex="0">
+  <nav id="navbarMain" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Abisinia Bautista. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7 reveal">
+          <h1 class="display-5 fw-bold mb-3">
+            Hola, soy Abisinia Bautista
+          </h1>
+          <p class="lead mb-4">
+            Licenciada en Informática por la Universidad Autónoma de Baja California (2017-2021).<br>
+            Desarrolladora con experiencia en backend y frontend. He trabajado con Laravel, CodeIgniter, Next.js y React; además de despliegue en AWS/Cloud.
+            Me enfoco en calidad de código, eficiencia en desarrollo y trabajo colaborativo.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-outline-secondary btn-sm rounded-3" href="https://drive.google.com/file/d/1HfW7rL0BdZNOoWINHH1t49jOC7uYI87h/view?usp=sharing" target="_blank" rel="noopener">
+              Descargar CV
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center reveal">
+          <img class="img-fluid rounded-4 shadow-sm hero-image" src="assets/img/Abisinia Bautista Bautista.png"alt="Foto de Abisinia Bautista">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-5 reveal">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <h2 class="fw-bold display-6 mb-2">Trayectoria Profesional</h2>
+          <p class="text-muted lead mb-0">
+            Enfocada en construir soluciones digitales sólidas, desde la arquitectura backend hasta la experiencia de usuario.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 reveal">
+        <div class="col-12">
+          <h3 class="h5 fw-bold border-start border-4 border-primary ps-3 mb-4">Experiencia y Logros</h3>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-server fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">Backend & Arquitectura</h4>
+              <p class="text-muted small mb-0">Desarrollo de módulos en PHP (Laravel/CodeIgniter) con patrón MVC e integración optimizada con PostgreSQL y MySQL.</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-cloud-arrow-up fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">Cloud & Despliegue</h4>
+              <p class="text-muted small mb-0">Configuración y despliegue de aplicaciones escalables en AWS y entornos Cloud modernos.</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-credit-card fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">Integraciones & Servicios</h4>
+              <p class="text-muted small mb-0">Implementación de Stripe, SendGrid y gestión documental en MongoDB para soluciones SaaS.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-braces fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">APIs RESTful</h4>
+              <p class="text-muted small mb-0">Diseño e integración de APIs seguras y documentadas para consumo interno y externo.</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-laptop fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">Frontend Moderno</h4>
+              <p class="text-muted small mb-0">Desarrollo de interfaces reactivas en Next.js y React con arquitectura basada en componentes reutilizables.</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <div class="mt-1 text-primary"><i class="bi bi-building-gear fs-5"></i></div>
+            <div>
+              <h4 class="h6 fw-bold">Sistemas Enterprise</h4>
+              <p class="text-muted small mb-0">Experiencia en entornos corporativos con Java, Oracle, JSP y sistemas legacy como AS400 RPG ILE.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <h2 class="fw-bold">Habilidades Técnicas</h2>
+        <p class="text-muted">Tecnologías y herramientas que utilizo para crear soluciones.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <div class="mb-3 text-primary">
+                <i class="bi bi-hdd-stack fs-1"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Backend</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-primary-subtle text-primary-emphasis">PHP</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Laravel</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">CodeIgniter</span>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Java</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <div class="mb-3 text-success">
+                <i class="bi bi-window-desktop fs-1"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Frontend</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-success-subtle text-success-emphasis">React</span>
+                <span class="badge bg-success-subtle text-success-emphasis">Next.js</span>
+                <span class="badge bg-success-subtle text-success-emphasis">JavaScript</span>
+                <span class="badge bg-success-subtle text-success-emphasis">Bootstrap</span>
+                <span class="badge bg-success-subtle text-success-emphasis">jQuery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <div class="mb-3 text-info">
+                <i class="bi bi-database fs-1"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Base de Datos</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-info-subtle text-info-emphasis">PostgreSQL</span>
+                <span class="badge bg-info-subtle text-info-emphasis">MySQL</span>
+                <span class="badge bg-info-subtle text-info-emphasis">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="card-body p-4">
+              <div class="mb-3 text-secondary">
+                <i class="bi bi-tools fs-1"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-3">Herramientas & Otros</h3>
+              <div class="d-flex flex-wrap justify-content-center gap-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">Git</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">AWS</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">Linux</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">Postman</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">Composer</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">npm</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">ClickUp</span>
+                <span class="badge bg-secondary-subtle text-secondary-emphasis">AS400</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
+        <div class="reveal">
+          <h2 class="fw-bold mb-1">Proyectos Destacados</h2>
+          <p class="text-muted mb-0">Experiencia aplicada en soluciones reales: arquitectura, logros y tecnologías.</p>
+        </div>
+        <div class="reveal">
+          <a class="btn btn-outline-primary" href="#contact">
+            <i class="bi bi-envelope me-1"></i> Contactar
+          </a>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Proyecto 1 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 fw-bold mb-0">misconductores.com</h3>
+                <span class="badge bg-warning-subtle text-warning-emphasis">Freelance</span>
+              </div>
+              <p class="text-muted small mb-3">Plataforma para reclutamiento y validación de antecedentes de conductores.</p>
+              
+              <div class="mb-3">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
+                <p class="small text-muted mb-0">
+                  Frontend SSR con Next.js integrado a servicios serverless y base de datos NoSQL (MongoDB).
+                </p>
+              </div>
+
+              <div class="mb-3 flex-grow-1">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
+                <ul class="small text-muted ps-3 mb-0">
+                  <li>Integración de API para realizar `background checks` a conductores.</li>
+                  <li>Implementación de sistema de pagos (Stripe) para la compra de créditos.</li>
+                  <li>Generación de reportes PDF y envío automático a empresas con SendGrid.</li>
+                  <li>Actualmente en fase de rediseño completo del frontend.</li>
+                </ul>
+              </div>
+
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-light text-dark border">Next.js</span>
+                  <span class="badge bg-light text-dark border">React</span>
+                  <span class="badge bg-light text-dark border">MongoDB</span>
+                  <span class="badge bg-light text-dark border">Stripe</span>
+                  <span class="badge bg-light text-dark border">SendGrid</span>
+                </div>
+                <div class="d-flex gap-2">
+                   <a href="https://www.misconductores.com/" class="btn btn-sm btn-primary w-100">Ir al Portal</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 fw-bold mb-0">Portal Agencia Digital</h3>
+                <span class="badge bg-info-subtle text-info-emphasis">ADBC</span>
+              </div>
+              <p class="text-muted small mb-3">Portal informativo público con panel de gestión interna.</p>
+
+              <div class="mb-3">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
+                <p class="small text-muted mb-0">
+                  Desarrollado en PHP con CodeIgniter 4 bajo una arquitectura MVC, conectado a una base de datos MySQL y desplegado en Cloud.
+                </p>
+              </div>
+
+              <div class="mb-3 flex-grow-1">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
+                <ul class="small text-muted ps-3 mb-0">
+                  <li>Desarrollo de la vista pública para informar sobre trámites y servicios.</li>
+                  <li>Creación de un panel interno para herramientas y administración de la agencia.</li>
+                  <li>Colaboración en un proyecto en desarrollo continuo con nuevos módulos.</li>
+                </ul>
+              </div>
+
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-light text-dark border">CodeIgniter</span>
+                  <span class="badge bg-light text-dark border">PHP</span>
+                  <span class="badge bg-light text-dark border">MySQL</span>
+                  <span class="badge bg-light text-dark border">Cloud</span>
+                  <span class="badge bg-light text-dark border">Mandrill</span>
+                </div>
+                <div class="d-flex gap-2">
+                   <a href="https://www.adbc.gob.mx/" class="btn btn-sm btn-primary w-100">Ir al Portal</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <article class="card h-100 border-0 shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h3 class="h5 fw-bold mb-0">Programador</h3>
+                <span class="badge bg-primary-subtle text-primary-emphasis">Global Hits</span>
+              </div>
+              <p class="text-muted small mb-3">Integración de sistemas corporativos.</p>
+
+              <div class="mb-3">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
+                <p class="small text-muted mb-0">
+                  Servicios backend en Java conectando bases de datos relacionales con interfaces modernas.
+                </p>
+              </div>
+
+              <div class="mb-3 flex-grow-1">
+                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
+                <ul class="small text-muted ps-3 mb-0">
+                  <li>Creación y documentación de APIs RESTful.</li>
+                  <li>Validación exhaustiva de flujos de datos con Postman.</li>
+                  <li>Mantenimiento de lógica de negocio compleja en Oracle/PostgreSQL.</li>
+                </ul>
+              </div>
+
+              <div class="mt-auto">
+                <div class="d-flex flex-wrap gap-1 mb-3">
+                  <span class="badge bg-light text-dark border">Java</span>
+                  <span class="badge bg-light text-dark border">Oracle</span>
+                  <span class="badge bg-light text-dark border">Postman</span>
+                  <span class="badge bg-light text-dark border">REST</span>
+                </div>
+                <div class="d-flex gap-2">
+                   <a href="#" class="btn btn-sm btn-primary w-100">Ver Demo</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-12 reveal">
+          <h2 class="h3 fw-bold mb-2">Contacto</h2>
+          <p class="text-white-50 mb-4">
+            ¿Tienes un proyecto o vacante? Escríbeme y con gusto platicamos.
+          </p>
+
+          <div class="d-flex justify-content-center gap-4">
+            <div><i class="bi bi-envelope me-2"></i> bautista.abisinia@gmail.com</div>
+            <div><i class="bi bi-phone me-2"></i> +52 664 337 2782</div>
+            <div><i class="bi bi-geo-alt me-2"></i> Tijuana, Baja California</div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS propio -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
