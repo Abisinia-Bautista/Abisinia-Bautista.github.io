@@ -1,389 +1,314 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abisinia Bautista | Portafolio</title>
-  <meta name="description" content="Portafolio profesional: sobre mí, proyectos, habilidades y contacto." />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abisinia Bautista — Developer Portfolio</title>
+  <meta name="description" content="Portfolio de Abisinia Bautista Bautista — Desarrolladora Backend/Frontend en Tijuana, BC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+<body>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-smooth-scroll="true" tabindex="0">
-  <nav id="navbarMain" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
 
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
-        </ul>
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo"></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#education">Educación</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="container">
+    <h1 class="hero-name">
+      Abisinia<br>
+      <span class="last">Bautista</span>
+    </h1>
+    <p class="hero-role" id="typewriter"><span class="cursor"></span></p>
+    <p class="hero-desc">
+      Desarrolladora Backend / Frontend con formación en Informática y experiencia en PHP, Java y JavaScript. he construido APIs REST robustas, despliego en AWS y entrego productos web completos con atención al detalle.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Ver proyectos
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="divider"></div>
+        <h2 class="section-title">Backend sólido,<br>frontend cuidado.</h2>
+        <p>Soy una desarrolladora web en <strong>Tijuana, BC</strong> con formación en Informática por la UABC. Me especializo en el desarrollo backend con PHP (Laravel, CodeIgniter) y Java, con experiencia real en proyectos empresariales y freelance.</p>
+        <p>He trabajado en entornos de producción desplegando en <strong>AWS</strong> y <strong>Cloud</strong>, integrando bases de datos relacionales y construyendo APIs REST que sirven tanto a sistemas internos como a clientes externos.</p>
+        <p>En el lado frontend, trabajo con <strong>React y Next.js</strong>, integrando pagos con Stripe, automatización de emails con SendGrid y almacenamiento en MongoDB para soluciones completas.</p>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="terminal-card">
+          <div class="term-bar">
+            <div class="term-dot r"></div>
+            <div class="term-dot y"></div>
+            <div class="term-dot g"></div>
+          </div>
+          <div class="term-line"><span class="term-prompt">~</span> <span class="term-cmd">cat</span> <span class="term-val">abisinia.json</span></div>
+          <br>
+          <div class="term-line"><span class="term-val">{</span></div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"name"</span>: <span class="term-val">"Abisinia Bautista"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"role"</span>: <span class="term-val">"Backend / Frontend Dev"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"location"</span>: <span class="term-val">"Tijuana, BC 🇲🇽"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"cloud"</span>: <span class="term-val">"AWS"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"degree"</span>: <span class="term-val">"Lic. Informática UABC"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"available"</span>: <span style="color:#10B981">true</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;<span class="term-key">"focus"</span>: [</div>
+          <div class="term-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="term-val">"APIs REST"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="term-val">"Laravel / PHP"</span>,</div>
+          <div class="term-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="term-val">"React / Next.js"</span></div>
+          <div class="term-line">&nbsp;&nbsp;]</div>
+          <div class="term-line"><span class="term-val">}</span></div>
+          <br>
+          <div class="term-line"><span class="term-prompt">~</span> <span class="term-cmd">█</span></div>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <header id="home" class="hero-section">
-    <div class="container py-5">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7 reveal">
-          <h1 class="display-5 fw-bold mb-3">
-            Hola, soy Abisinia Bautista
-          </h1>
-          <p class="lead mb-4">
-            Licenciada en Informática por la Universidad Autónoma de Baja California (2017-2021).<br>
-            Desarrolladora con experiencia en backend y frontend. He trabajado con Laravel, CodeIgniter, Next.js y React; además de despliegue en AWS/Cloud.
-            Me enfoco en calidad de código, eficiencia en desarrollo y trabajo colaborativo.
-          </p>
+<section id="skills">
+  <div class="container">
+    <div class="reveal">
+      <div class="divider"></div>
+      <h2 class="section-title">Stack tecnológico</h2>
+      <p class="section-sub">Tecnologías con las que he trabajado y desarrollado en entornos reales, desde el servidor hasta la interfaz y el cloud.</p>
+    </div>
+    <div class="skills-categories">
+      <div class="reveal">
+        <p class="skill-cat-label">Backend</p>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-icon">🐘</span><span>PHP</span></div>
+          <div class="skill-tag"><span class="skill-icon">🔴</span><span>Laravel</span></div>
+          <div class="skill-tag"><span class="skill-icon">🔥</span><span>CodeIgniter</span></div>
+          <div class="skill-tag"><span class="skill-icon">☕</span><span>Java</span></div>
+          <div class="skill-tag"><span class="skill-icon">🟢</span><span>Node.js</span></div>
+          <div class="skill-tag"><span class="skill-icon">🔌</span><span>APIs REST</span></div>
+          <div class="skill-tag"><span class="skill-icon">🏛️</span><span>Arquitectura MVC</span></div>
+          <div class="skill-tag"><span class="skill-icon">🖥️</span><span>AS400 / RPG ILE</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="skill-cat-label">Frontend</p>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-icon">⚛️</span><span>React</span></div>
+          <div class="skill-tag"><span class="skill-icon">▲</span><span>Next.js</span></div>
+          <div class="skill-tag"><span class="skill-icon">⚡</span><span>JavaScript</span></div>
+          <div class="skill-tag"><span class="skill-icon">🌐</span><span>HTML5 / CSS3</span></div>
+          <div class="skill-tag"><span class="skill-icon">📄</span><span>JSP</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <p class="skill-cat-label">Bases de datos</p>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-icon">🐘</span><span>PostgreSQL</span></div>
+          <div class="skill-tag"><span class="skill-icon">🐬</span><span>MySQL</span></div>
+          <div class="skill-tag"><span class="skill-icon">🔶</span><span>Oracle Database</span></div>
+          <div class="skill-tag"><span class="skill-icon">🍃</span><span>MongoDB</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-3">
+        <p class="skill-cat-label">Cloud, DevOps & herramientas</p>
+        <div class="skills-grid">
+          <div class="skill-tag"><span class="skill-icon">☁️</span><span>AWS</span></div>
+          <div class="skill-tag"><span class="skill-icon">🐙</span><span>Git / GitHub</span></div>
+          <div class="skill-tag"><span class="skill-icon">🔧</span><span>Postman</span></div>
+          <div class="skill-tag"><span class="skill-icon">💳</span><span>Stripe</span></div>
+          <div class="skill-tag"><span class="skill-icon">📧</span><span>SendGrid</span></div>
+          <div class="skill-tag"><span class="skill-icon">🪝</span><span>Webhooks</span></div>
+          <div class="skill-tag"><span class="skill-icon">📄</span><span>PDF Generation</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="d-flex flex-wrap gap-2">
-            <a class="btn btn-outline-secondary btn-sm rounded-3" href="https://drive.google.com/file/d/1HfW7rL0BdZNOoWINHH1t49jOC7uYI87h/view?usp=sharing" target="_blank" rel="noopener">
-              Descargar CV
+<section id="projects">
+  <div class="container">
+    <div class="reveal">
+      <div class="divider"></div>
+      <h2 class="section-title">Trabajo destacado</h2>
+      <p class="section-sub">Proyectos donde apliqué el stack completo para resolver problemas reales en producción.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <p class="project-featured">Agencia Digital BC</p>
+          <div class="project-links">
+            <a href="https://www.adbc.gob.mx/" target="_blank" rel="noopener" class="project-link" aria-label="Portal ADBC">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
+        <h3 class="project-name">Portal Ciudadano ADBC</h3>
+        <p class="project-desc">Portal web para la ciudadanía con información sobre trámites y servicios del gobierno. Incluye un panel interno para generación de PDFs, envío de correos, administración de personal y gestión de herramientas, desarrollado en PHP con CodeIgniter bajo arquitectura MVC y MySQL.</p>
+        <div class="project-tags">
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">CodeIgniter</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">MVC</span>
+          <span class="project-tag">PDF</span>
+          <span class="project-tag">Mandrill</span>
+        </div>
+      </div>
 
-        <div class="col-lg-5 text-center reveal">
-          <img class="img-fluid rounded-4 shadow-sm hero-image" src="assets/img/Abisinia Bautista Bautista.png"alt="Foto de Abisinia Bautista">
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-header">
+          <p class="project-featured">freelance</p>
+          <div class="project-links">
+            <a href="https://www.misconductores.com/" target="_blank" rel="noopener" class="project-link" aria-label="misconductores.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="project-name">misconductores.com</h3>
+        <p class="project-desc">Plataforma desarrollada con Next.js y React donde integré pagos con Stripe, consumo de APIs y webhooks para validar los antecedentes de una persona y enviar su reporte en PDF por correo. También implementé persistencia de datos con MongoDB.</p>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Stripe</span>
+          <span class="project-tag">Webhooks</span>
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">PDF</span>
+          <span class="project-tag">Sendrill</span>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="reveal">
+      <div class="divider"></div>
+      <h2 class="section-title">Trayectoria profesional</h2>
+    </div>
+    <div class="timeline reveal reveal-delay-1">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">Febrero 2024 — Presente</p>
+        <h3 class="timeline-role">Desarrollador web</h3>
+        <p class="timeline-company">Agencia Digital del Estado de Baja California</p>
+        <ul class="timeline-bullets">
+          <li>Desarrollo de módulos y servicios backend en PHP (Laravel y CodeIgniter) bajo arquitectura MVC.</li>
+          <li>Diseño e integración de APIs RESTful seguras para consumo interno y externo.</li>
+          <li>Configuración y despliegue de aplicaciones en AWS con integración de PostgreSQL y MySQL.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Laravel</span>
+          <span class="timeline-tag">CodeIgniter</span>
+          <span class="timeline-tag">PHP</span>
+          <span class="timeline-tag">AWS</span>
+          <span class="timeline-tag">PostgreSQL</span>
+          <span class="timeline-tag">MySQL</span>
+          <span class="timeline-tag">APIs REST</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">Julio 2024 — Presente</p>
+        <h3 class="timeline-role">Desarrollador Freelance</h3>
+        <p class="timeline-company">misconductores · Tijuana, B.C.</p>
+        <ul class="timeline-bullets">
+          <li>Desarrollo de solución completa con Next.js y React, creando componentes reutilizables.</li>
+          <li>Integración de APIs, webhooks y generación automática de reportes PDF con diseño personalizado.</li>
+          <li>Implementación de pagos con Stripe, automatización de correos con SendGrid y almacenamiento en MongoDB.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Next.js</span>
+          <span class="timeline-tag">React</span>
+          <span class="timeline-tag">Stripe</span>
+          <span class="timeline-tag">SendGrid</span>
+          <span class="timeline-tag">MongoDB</span>
+          <span class="timeline-tag">Webhooks</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-date">Octubre 2021 — Diciembre 2023</p>
+        <h3 class="timeline-role">Programador Jr.</h3>
+        <p class="timeline-company">Global Hits</p>
+        <ul class="timeline-bullets">
+          <li>Desarrollo de software en Java y gestión de bases de datos Oracle y PostgreSQL.</li>
+          <li>Creación, integración y pruebas de APIs REST utilizando Postman.</li>
+          <li>Desarrollo y mantenimiento de componentes AS400 RPG ILE y frontend en JSP.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Java</span>
+          <span class="timeline-tag">Oracle DB</span>
+          <span class="timeline-tag">PostgreSQL</span>
+          <span class="timeline-tag">AS400 / RPG ILE</span>
+          <span class="timeline-tag">JSP</span>
+          <span class="timeline-tag">Postman</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="reveal">
+      <div class="divider"></div>
+      <h2 class="section-title">Formación académica</h2>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <h3 class="edu-degree">Licenciatura en Informática</h3>
+          <p class="edu-school">Universidad Autónoma de Baja California (UABC)</p>
+          <p class="edu-period">2017 – 2021 · Tijuana, B.C.</p>
+          <span class="edu-badge">✓ Título y cédula profesional</span>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row justify-content-between align-items-center mb-5 reveal">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <h2 class="fw-bold display-6 mb-2">Trayectoria Profesional</h2>
-          <p class="text-muted lead mb-0">
-            Enfocada en construir soluciones digitales sólidas, desde la arquitectura backend hasta la experiencia de usuario.
-          </p>
-        </div>
-      </div>
-
-      <div class="row g-4 reveal">
-        <div class="col-12">
-          <h3 class="h5 fw-bold border-start border-4 border-primary ps-3 mb-4">Experiencia y Logros</h3>
-        </div>
-
-        <div class="col-md-6">
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-server fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">Backend & Arquitectura</h4>
-              <p class="text-muted small mb-0">Desarrollo de módulos en PHP (Laravel/CodeIgniter) con patrón MVC e integración optimizada con PostgreSQL y MySQL.</p>
-            </div>
-          </div>
-
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-cloud-arrow-up fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">Cloud & Despliegue</h4>
-              <p class="text-muted small mb-0">Configuración y despliegue de aplicaciones escalables en AWS y entornos Cloud modernos.</p>
-            </div>
-          </div>
-
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-credit-card fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">Integraciones & Servicios</h4>
-              <p class="text-muted small mb-0">Implementación de Stripe, SendGrid y gestión documental en MongoDB para soluciones SaaS.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-braces fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">APIs RESTful</h4>
-              <p class="text-muted small mb-0">Diseño e integración de APIs seguras y documentadas para consumo interno y externo.</p>
-            </div>
-          </div>
-
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-laptop fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">Frontend Moderno</h4>
-              <p class="text-muted small mb-0">Desarrollo de interfaces reactivas en Next.js y React con arquitectura basada en componentes reutilizables.</p>
-            </div>
-          </div>
-
-          <div class="d-flex gap-3 mb-4">
-            <div class="mt-1 text-primary"><i class="bi bi-building-gear fs-5"></i></div>
-            <div>
-              <h4 class="h6 fw-bold">Sistemas Enterprise</h4>
-              <p class="text-muted small mb-0">Experiencia en entornos corporativos con Java, Oracle, JSP y sistemas legacy como AS400 RPG ILE.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+<section id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <h2 class="contact-title">¿Trabajamos juntos?</h2>
+      <p class="contact-desc">Estoy abierta a oportunidades, proyectos freelance o simplemente platicar sobre tecnología. Escríbeme.</p>
+      <a href="mailto:bautista.abisinia@gmail.com" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        bautista.abisinia@gmail.com
+      </a>
     </div>
-  </section>
-
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5 reveal">
-        <h2 class="fw-bold">Habilidades Técnicas</h2>
-        <p class="text-muted">Tecnologías y herramientas que utilizo para crear soluciones.</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card h-100 border-0 shadow-sm text-center">
-            <div class="card-body p-4">
-              <div class="mb-3 text-primary">
-                <i class="bi bi-hdd-stack fs-1"></i>
-              </div>
-              <h3 class="h5 fw-bold mb-3">Backend</h3>
-              <div class="d-flex flex-wrap justify-content-center gap-2">
-                <span class="badge bg-primary-subtle text-primary-emphasis">PHP</span>
-                <span class="badge bg-primary-subtle text-primary-emphasis">Laravel</span>
-                <span class="badge bg-primary-subtle text-primary-emphasis">CodeIgniter</span>
-                <span class="badge bg-primary-subtle text-primary-emphasis">Java</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card h-100 border-0 shadow-sm text-center">
-            <div class="card-body p-4">
-              <div class="mb-3 text-success">
-                <i class="bi bi-window-desktop fs-1"></i>
-              </div>
-              <h3 class="h5 fw-bold mb-3">Frontend</h3>
-              <div class="d-flex flex-wrap justify-content-center gap-2">
-                <span class="badge bg-success-subtle text-success-emphasis">React</span>
-                <span class="badge bg-success-subtle text-success-emphasis">Next.js</span>
-                <span class="badge bg-success-subtle text-success-emphasis">JavaScript</span>
-                <span class="badge bg-success-subtle text-success-emphasis">Bootstrap</span>
-                <span class="badge bg-success-subtle text-success-emphasis">jQuery</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card h-100 border-0 shadow-sm text-center">
-            <div class="card-body p-4">
-              <div class="mb-3 text-info">
-                <i class="bi bi-database fs-1"></i>
-              </div>
-              <h3 class="h5 fw-bold mb-3">Base de Datos</h3>
-              <div class="d-flex flex-wrap justify-content-center gap-2">
-                <span class="badge bg-info-subtle text-info-emphasis">PostgreSQL</span>
-                <span class="badge bg-info-subtle text-info-emphasis">MySQL</span>
-                <span class="badge bg-info-subtle text-info-emphasis">MongoDB</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card h-100 border-0 shadow-sm text-center">
-            <div class="card-body p-4">
-              <div class="mb-3 text-secondary">
-                <i class="bi bi-tools fs-1"></i>
-              </div>
-              <h3 class="h5 fw-bold mb-3">Herramientas & Otros</h3>
-              <div class="d-flex flex-wrap justify-content-center gap-2">
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">Git</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">AWS</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">Linux</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">Postman</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">Composer</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">npm</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">ClickUp</span>
-                <span class="badge bg-secondary-subtle text-secondary-emphasis">AS400</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="py-5">
-    <div class="container">
-      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4">
-        <div class="reveal">
-          <h2 class="fw-bold mb-1">Proyectos Destacados</h2>
-          <p class="text-muted mb-0">Experiencia aplicada en soluciones reales: arquitectura, logros y tecnologías.</p>
-        </div>
-        <div class="reveal">
-          <a class="btn btn-outline-primary" href="#contact">
-            <i class="bi bi-envelope me-1"></i> Contactar
-          </a>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <!-- Proyecto 1 -->
-        <div class="col-lg-4 col-md-6 reveal">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="h5 fw-bold mb-0">misconductores.com</h3>
-                <span class="badge bg-warning-subtle text-warning-emphasis">Freelance</span>
-              </div>
-              <p class="text-muted small mb-3">Plataforma para reclutamiento y validación de antecedentes de conductores.</p>
-              
-              <div class="mb-3">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
-                <p class="small text-muted mb-0">
-                  Frontend SSR con Next.js integrado a servicios serverless y base de datos NoSQL (MongoDB).
-                </p>
-              </div>
-
-              <div class="mb-3 flex-grow-1">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
-                <ul class="small text-muted ps-3 mb-0">
-                  <li>Integración de API para realizar `background checks` a conductores.</li>
-                  <li>Implementación de sistema de pagos (Stripe) para la compra de créditos.</li>
-                  <li>Generación de reportes PDF y envío automático a empresas con SendGrid.</li>
-                  <li>Actualmente en fase de rediseño completo del frontend.</li>
-                </ul>
-              </div>
-
-              <div class="mt-auto">
-                <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-light text-dark border">Next.js</span>
-                  <span class="badge bg-light text-dark border">React</span>
-                  <span class="badge bg-light text-dark border">MongoDB</span>
-                  <span class="badge bg-light text-dark border">Stripe</span>
-                  <span class="badge bg-light text-dark border">SendGrid</span>
-                </div>
-                <div class="d-flex gap-2">
-                   <a href="https://www.misconductores.com/" class="btn btn-sm btn-primary w-100">Ir al Portal</a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Proyecto 2 -->
-        <div class="col-lg-4 col-md-6 reveal">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="h5 fw-bold mb-0">Portal Agencia Digital</h3>
-                <span class="badge bg-info-subtle text-info-emphasis">ADBC</span>
-              </div>
-              <p class="text-muted small mb-3">Portal informativo público con panel de gestión interna.</p>
-
-              <div class="mb-3">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
-                <p class="small text-muted mb-0">
-                  Desarrollado en PHP con CodeIgniter 4 bajo una arquitectura MVC, conectado a una base de datos MySQL y desplegado en Cloud.
-                </p>
-              </div>
-
-              <div class="mb-3 flex-grow-1">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
-                <ul class="small text-muted ps-3 mb-0">
-                  <li>Desarrollo de la vista pública para informar sobre trámites y servicios.</li>
-                  <li>Creación de un panel interno para herramientas y administración de la agencia.</li>
-                  <li>Colaboración en un proyecto en desarrollo continuo con nuevos módulos.</li>
-                </ul>
-              </div>
-
-              <div class="mt-auto">
-                <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-light text-dark border">CodeIgniter</span>
-                  <span class="badge bg-light text-dark border">PHP</span>
-                  <span class="badge bg-light text-dark border">MySQL</span>
-                  <span class="badge bg-light text-dark border">Cloud</span>
-                  <span class="badge bg-light text-dark border">Mandrill</span>
-                </div>
-                <div class="d-flex gap-2">
-                   <a href="https://www.adbc.gob.mx/" class="btn btn-sm btn-primary w-100">Ir al Portal</a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Proyecto 3 -->
-        <div class="col-lg-4 col-md-6 reveal">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-2">
-                <h3 class="h5 fw-bold mb-0">Programador</h3>
-                <span class="badge bg-primary-subtle text-primary-emphasis">Global Hits</span>
-              </div>
-              <p class="text-muted small mb-3">Integración de sistemas corporativos.</p>
-
-              <div class="mb-3">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-diagram-3 me-1"></i>Arquitectura</h6>
-                <p class="small text-muted mb-0">
-                  Servicios backend en Java conectando bases de datos relacionales con interfaces modernas.
-                </p>
-              </div>
-
-              <div class="mb-3 flex-grow-1">
-                <h6 class="fw-bold small text-uppercase text-primary mb-2"><i class="bi bi-check-circle me-1"></i>Logros</h6>
-                <ul class="small text-muted ps-3 mb-0">
-                  <li>Creación y documentación de APIs RESTful.</li>
-                  <li>Validación exhaustiva de flujos de datos con Postman.</li>
-                  <li>Mantenimiento de lógica de negocio compleja en Oracle/PostgreSQL.</li>
-                </ul>
-              </div>
-
-              <div class="mt-auto">
-                <div class="d-flex flex-wrap gap-1 mb-3">
-                  <span class="badge bg-light text-dark border">Java</span>
-                  <span class="badge bg-light text-dark border">Oracle</span>
-                  <span class="badge bg-light text-dark border">Postman</span>
-                  <span class="badge bg-light text-dark border">REST</span>
-                </div>
-                <div class="d-flex gap-2">
-                   <a href="#" class="btn btn-sm btn-primary w-100">Ver Demo</a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-dark text-white">
-    <div class="container">
-      <div class="row g-4 align-items-start">
-        <div class="col-lg-12 reveal">
-          <h2 class="h3 fw-bold mb-2">Contacto</h2>
-          <p class="text-white-50 mb-4">
-            ¿Tienes un proyecto o vacante? Escríbeme y con gusto platicamos.
-          </p>
-
-          <div class="d-flex justify-content-center gap-4">
-            <div><i class="bi bi-envelope me-2"></i> bautista.abisinia@gmail.com</div>
-            <div><i class="bi bi-phone me-2"></i> +52 664 337 2782</div>
-            <div><i class="bi bi-geo-alt me-2"></i> Tijuana, Baja California</div>
-          </div>
-        </div>
-      </div>
-
-      <hr class="border-secondary my-4">
-    </div>
-  </section>
-
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- JS propio -->
-  <script src="js/animations.js"></script>
-  <script src="js/main.js"></script>
+  </div>
+</section>
 </body>
 </html>
